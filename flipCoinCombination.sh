@@ -30,7 +30,7 @@ do
 	echo "$pos: ${Singlet[$pos]},"
 done
 
-#Doublet=(["HH"]=0 ["HT"]=0 ["TH"]=0 ["TT"]=0)
+Doublet=(["HH"]=0 ["HT"]=0 ["TH"]=0 ["TT"]=0)
 for ((j=1;j<=5;j++))
 do
         flip=$((RANDOM%4))
@@ -91,3 +91,4 @@ for index in ${!Triplet[@]}
 do
 	echo "$index: ${Triplet[$index]},"
 done
+echo " "
